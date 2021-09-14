@@ -1,12 +1,13 @@
 pipeline {
   agent any
   stages {
-    stage('error') {
+    stage('build') {
       steps {
         echo 'hello world'
         sh 'pwd'
         sh 'export'
         sh 'ls -latrh'
+        sh 'echo $GIT_URL'
       }
     }
 
