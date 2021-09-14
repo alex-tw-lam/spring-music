@@ -1,9 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
         echo 'hello world'
+        sh 'pwd'
+        sh 'export'
+        sh 'ls -latrh'
       }
     }
 
