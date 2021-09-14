@@ -7,7 +7,7 @@ pipeline {
         sh 'pwd'
         sh 'export'
         sh 'ls -latrh'
-        sh '''echo $GIT_URL | awk -F\'/\' \'{ print $(NF) }\' | sed \'s/.git$//\'
+        sh '''export APP_NAME=`echo $GIT_URL | awk -F\'/\' \'{ print $(NF) }\' | sed \'s/.git$//\'`
 '''
       }
     }
