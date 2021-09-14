@@ -12,5 +12,11 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        echo '$APP_NAME'
+      }
+    }
+
   }
 }
