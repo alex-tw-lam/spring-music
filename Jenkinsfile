@@ -12,9 +12,10 @@ pipeline {
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
         echo '$APP_NAME'
+        sh 'echo $APP_NAME'
       }
     }
 
